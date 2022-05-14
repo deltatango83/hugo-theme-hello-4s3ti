@@ -29,6 +29,9 @@
     {{ end }}
 {{ end }}
 
+{{ if .Site.Params.fontAwesome }}
+    <script src="{{ .Site.Params.fontAwesome.kitURL }}" crossorigin="anonymous"></script>
+{{ end }}
 <!-- Icons -->
 {{- partial "favicons.html" . }}
 
