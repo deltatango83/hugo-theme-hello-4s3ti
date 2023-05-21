@@ -10,6 +10,7 @@ const chosenTheme = window.localStorage && window.localStorage.getItem("theme");
 const chosenThemeIsDark = chosenTheme == "dark";
 const chosenThemeIsLight = chosenTheme == "light";
 
+
 // Detect the color scheme the operating system prefers.
 function detectOSColorTheme() {
   if (chosenThemeIsDark) {
@@ -24,7 +25,6 @@ function detectOSColorTheme() {
 }
 
 // Switch the theme.
-// Switch the theme.
 function switchTheme(e) {
   if (chosenThemeIsDark) {
     localStorage.setItem("theme", "light");
@@ -37,10 +37,6 @@ function switchTheme(e) {
       localStorage.setItem("theme", "dark");
     }
   }
-
-  detectOSColorTheme();
-  window.location.reload();
-}
 
   detectOSColorTheme();
   window.location.reload();
